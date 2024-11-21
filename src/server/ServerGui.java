@@ -116,17 +116,6 @@ public class ServerGui {
 		frmServerMangement.getContentPane().add(btnStart);
 		btnStart.setIcon(new javax.swing.ImageIcon(ServerGui.class.getResource("/image/start.png")));
 		
-//		BufferedImage img = null;
-//		try {
-//		    img = ImageIO.read(new File(ServerGui.class.getResource("/image/serverManager.png").getFile()));
-//		} catch (IOException e) {
-//		    e.printStackTrace();
-//		}
-//		Image dimg = img.getScaledInstance(64, 64,
-//		        Image.SCALE_SMOOTH);
-//		ImageIcon imageIcon = new ImageIcon(dimg);
-
-		
 		JLabel lblNhom = new JLabel("Server Management");
 		lblNhom.setFont(new Font("Segoe UI", Font.PLAIN, 18));
 		lblNhom.setBounds(169, 13, 268, 76);
@@ -138,7 +127,7 @@ public class ServerGui {
 		txtMessage.setForeground(Color.GREEN);
 		txtMessage.setFont(new Font("Consolas", Font.PLAIN, 14));
 		txtMessage.setEditable(false);
-		txtMessage.setBounds(0, 267, 714, 358);		////// Vi tri textArea
+		txtMessage.setBounds(0, 267, 714, 350);		////// Vi tri textArea
 		frmServerMangement.getContentPane().add(txtMessage);
 
 		JButton btnStop = new JButton("STOP");
